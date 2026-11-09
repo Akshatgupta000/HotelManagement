@@ -1,0 +1,29 @@
+{
+  "name": "hotel-booking-management-system",
+  "version": "1.0.0",
+  "description": "Hotel Booking Management & Operations System - MERN Stack Monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "seed": "npm --prefix backend run seed",
+    "start": "npm --prefix backend start",
+    "test:e2e": "npm --prefix e2e-tests test"
+  },
+  "keywords": [
+    "mern",
+    "hotel-booking",
+    "hotel-management",
+    "react",
+    "express",
+    "mongodb",
+    "typescript"
+  ],
+  "license": "MIT"
+}
+
